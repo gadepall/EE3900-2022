@@ -296,6 +296,7 @@ The output of the python script in Problem \ref{prob:output} is the audio file S
 \section{Difference Equation}
 \begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
 \item Let
+	\label{def:xn}
 \begin{equation}
 x(n) = \cbrak{\underset{\uparrow}{1},2,3,4,2,1}
 \end{equation}
@@ -353,6 +354,8 @@ resulting in \eqref{eq:shift1}. Similarly, it can be shown that
 \label{eq:z_trans_shift}
 	{\mathcal {Z}}\{x(n-k)\} = z^{-k}X(z)
 \end{equation}
+\item Obtain $X(z)$ for $x(n)$ defined in problem 
+	\ref{def:xn}.
 
 \item Find
 %
@@ -418,7 +421,7 @@ Let
 \begin{equation}
 H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 \end{equation}
-Plot $\abs{H\brak{e^{\j \omega}}}$.  Comment.  $H(e^{\j \omega})$ is
+Plot $\abs{H\brak{e^{\j \omega}}}$.  Is it periodic? If so, find the period. $H(e^{\j \omega})$ is
 known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots Fig. \ref{fig:dtft}.
@@ -431,10 +434,18 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/dtft.
 \caption{$\abs{H\brak{e^{\j\omega}}}$}
 \label{fig:dtft}
 \end{figure}
+\item Express $x(n)$ in terms of $H\brak{e^{\j \omega}}$.
 \end{enumerate}
 
 \section{Impulse Response}
 \begin{enumerate}[label=\thesection.\arabic*]
+	\item Using long division, 
+find
+		\begin{align}
+			h(n), \quad n < 5
+		\end{align}
+		for H(z) in 
+		\eqref{eq:freq_resp}.
 \item \label{prob:impulse_resp}
 Find an expression for $h(n)$ using $H(z)$, given that 
 %in Problem \ref{eq:ztransab} and \eqref{eq:anun}, given that
@@ -452,7 +463,7 @@ H(z) &= \frac{1}{1 + \frac{1}{2}z^{-1}} + \frac{ z^{-2}}{1 + \frac{1}{2}z^{-1}}
 \implies h(n) &= \brak{-\frac{1}{2}}^{n}u(n) + \brak{-\frac{1}{2}}^{n-2}u(n-2)
 \end{align}
 using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
-\item Sketch $h(n)$. Is it bounded? Convergent? 
+\item Sketch $h(n)$. Is it bounded? Justify theoretically.
 \\
 \solution The following code plots Fig. \ref{fig:hn}.
 \begin{lstlisting}
@@ -465,12 +476,14 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/hn.py
 \label{fig:hn}
 \end{figure}
 %
+\item Convergent? Justify using the ratio test.
 \item The system with $h(n)$ is defined to be stable if
 \begin{equation}
 \sum_{n=-\infty}^{\infty}h(n) < \infty
 \end{equation}
 Is the system defined by \eqref{eq:iir_filter} stable for the impulse response in \eqref{eq:impulse_resp}?
 %
+\item Verify the above result using a python code.
 \item 
 Compute and sketch $h(n)$ using 
 \begin{equation}
@@ -517,6 +530,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yncon
 \caption{$y(n)$ from the definition of convolution}
 \label{fig:ynconv}
 \end{figure}
+\item Express the above convolution using a Teoplitz matrix.
 
 \item Show that
 \begin{equation}
@@ -559,6 +573,7 @@ wget https://raw.githubusercontent.com/gadepall/EE1310/master/filter/codes/yndft
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and 
 IFFT.
 \item Wherever possible, express all the above equations as matrix equations.
+\item Verify the above equations by generating the DFT matrix in python.
 \end{enumerate}
 %
 \section{Exercises}
