@@ -4,4 +4,7 @@
 \contentsline {section}{\numberline {4}$Z$-transform}{2}{section.4}%
 \contentsline {section}{\numberline {5}Impulse Response}{3}{section.5}%
 \contentsline {section}{\numberline {6}DFT and FFT}{4}{section.6}%
-\contentsline {section}{\numberline {7}Exercises}{5}{section.7}%
+\contentsline {section}{\numberline {7}FFT}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definitions}{5}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Problems}{5}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Exercises}{5}{section.8}%
