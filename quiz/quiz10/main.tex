@@ -219,7 +219,7 @@ breaklines=true
 \end{tikzpicture}
 % \includegraphics[scale=0.05]{logo_iith} \newline
 
-& Quiz 9 
+& Quiz  10
 	&
 EE3900	
 \end{tabular}
@@ -267,19 +267,29 @@ u(n) =
 	X^{+}(z) = \sum_{n = 0}^{\infty}x(n)z^{-n}, \quad z \in \mathbb{C}
 \label{eq:one-Z}
 \end{align}
+\item  The {\em Pingala} series is generated using the difference equation 
+\begin{align}
+	x(n+2) = x\brak{n+1} + x\brak{n},  \quad x(0) = x(1) = 1, n \ge 0
+	\label{eq:10-pingala}
+\end{align}
 \item $\alpha, \beta$ are the roots of the equation 
 \begin{align}
-	t^2-t-1 = 0
+	z^2-z-1 = 0
 \end{align}
 \item 
 \begin{align}
-	a_n = \frac{\alpha^{n}-\beta^{n}}{\alpha - \beta}, \quad n \ge 1
+	y(n)	 = x\brak{n-1} + x\brak{n+1},  \quad n \ge 0
+	\label{eq:10-orig-diff-rev}
 \end{align}
- \item 
-\begin{align}
-	b_n = a_{n-1} + a_{n+1}, \quad n \ge 2, \quad b_1 =1
-	\label{eq:9-orig-diff}
-\end{align}
+%\item 
+%\begin{align}
+%	a_n = \frac{\alpha^{n}-\beta^{n}}{\alpha - \beta}, \quad n \ge 1
+%\end{align}
+% \item 
+%\begin{align}
+%	b_n = a_{n-1} + a_{n+1}, \quad n \ge 2, \quad b_1 =1
+%	\label{eq:10-orig-diff}
+%\end{align}
 
  \end{enumerate}
 
@@ -287,69 +297,85 @@ u(n) =
 \begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{section}
 
-\item Show that 
-	\eqref{eq:9-orig-diff}
-	can be expressed as 
-\begin{align}
-	y(n)	 = x\brak{n-1} + x\brak{n+1},  \quad x(0) = y(0) = 1, n \ge 0
-	\label{eq:9-orig-diff-rev}
-\end{align}
-where 
-\begin{align}
-	x(n) &= a(n+1), \quad  n \ge 0\\
-	y(n)	 &= b(n+1), \quad  n \ge 0
-	\label{eq:9-orig-diff-rev-cond}
-\end{align}
-\item Show that the one sided Z transform of $x(n-1)$ and  $x(n+1)$  are 
-\begin{align}
-	 x(-1) + z^{-1}X^{+}(z) 
-\end{align}
-and
-\begin{align}
-	 zX^{+}(z) - zx(0)  
-\end{align}
-respectively.
 \item Show that
 \begin{align}
-	X^{+}(z) = \frac{1}{1-z^{-1}-z^{-2}}
-\end{align}
- \item Show that 
-\begin{align}
-	\sum_{k=1}^{\infty}\frac{a_k}{10^k} = \frac{1}{10}\sum_{k=0}^{\infty}\frac{x(k)}{10^k} 
-\end{align}
-%
-\item Show that 
-\begin{align}
-	Y^{+}(z) = \frac{1+2z^{-1}}{1-z^{-1}-z^{-2}}
-\end{align}
- \item Show that 
-\begin{align}
-	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =\frac{1}{10}	\sum_{k=1}^{\infty}\frac{y(k)}{10^k}  
+	X^{+}(z) = \frac{1}{1-z^{-1}-z^{-2}} \quad \abs{z} > \alpha
 \end{align}
 \item Show that 
 \begin{align}
-	\sum_{k=1}^{n}a_k = x(n)*u(n-1)
+	x(n) = \frac{\alpha^{n+1}-\beta^{n+1}}{\alpha-\beta}u(n)
 \end{align}
-\item Find $y(n)$.
-\item Which of the following options is/are correct?
+\item Show that 
+%	\eqref{eq:10-orig-diff}
+%	can be expressed as 
+\begin{align}
+	Y^{+}(z) = \frac{1+2z^{-1}}{1-z^{-1}-z^{-2}} \quad \abs{z} > \alpha
+	\label{eq:10-Y+}
+\end{align}
+\item Find the Z transform of 
+\begin{align}
+	x(n)*u(n-1)	
+\end{align}
+%where 
+%\begin{align}
+%	x(n) &= a(n+1), \quad  n \ge 0\\
+%	y(n)	 &= b(n+1), \quad  n \ge 0
+%	\label{eq:10-orig-diff-rev-cond}
+%\end{align}
+%\item Show that the one sided Z transform of $x(n-1)$ and  $x(n+1)$  are 
+%\begin{align}
+%	 x(-1) + z^{-1}X^{+}(z) 
+%\end{align}
+%and
+%\begin{align}
+%	 zX^{+}(z) - zx(0)  
+%\end{align}
+%respectively.
+% \item Show that 
+%\begin{align}
+%	\sum_{k=1}^{\infty}\frac{a_k}{10^k} = \frac{1}{10}\sum_{k=0}^{\infty}\frac{x(k)}{10^k} 
+%\end{align}
+%%
+%\item Show that 
+%\begin{align}
+%	Y^{+}(z) = \frac{1+2z^{-1}}{1-z^{-1}-z^{-2}}
+%\end{align}
+% \item Show that 
+%\begin{align}
+%	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =\frac{1}{10}	\sum_{k=1}^{\infty}\frac{y(k)}{10^k}  
+%\end{align}
+%\item Show that 
+%\begin{align}
+%	\sum_{k=1}^{n}a_k = x(n)*u(n-1)
+%\end{align}
+%\item Find $y(n)$.
+%\item Which of the following options is/are correct?
+%	\begin{enumerate}
+%\item 
+%\begin{align}
+%	\sum_{k=1}^{n}a_k = a_{n+2}-1, \quad n \ge 1
+%\end{align}
+% \item 
+%\begin{align}
+%	\sum_{k=1}^{\infty}\frac{a_k}{10^k} =\frac{10}{89}
+%\end{align}
+% \item 
+%\begin{align}
+%	b_n =\alpha^n + \beta^n, \quad n \ge 1
+%\end{align}
+% \item 
+%\begin{align}
+%	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =\frac{8}{89}
+%\end{align}
+% \end{enumerate}
+\item Is the system defined by 
+	\eqref{eq:10-orig-diff-rev}
 	\begin{enumerate}
-\item 
-\begin{align}
-	\sum_{k=1}^{n}a_k = a_{n+2}-1, \quad n \ge 1
-\end{align}
- \item 
-\begin{align}
-	\sum_{k=1}^{\infty}\frac{a_k}{10^k} =\frac{10}{89}
-\end{align}
- \item 
-\begin{align}
-	b_n =\alpha^n + \beta^n, \quad n \ge 1
-\end{align}
- \item 
-\begin{align}
-	\sum_{k=1}^{\infty}\frac{b_k}{10^k} =\frac{8}{89}
-\end{align}
- \end{enumerate}
+		\item Linear
+		\item Time-invariant
+		\item Causal
+		\item Stable?
+	\end{enumerate}
 	\end{enumerate}
 
 \end{document}
