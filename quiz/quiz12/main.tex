@@ -271,10 +271,25 @@ u(t) =
 	\item Show that the Laplace transform of $u(t)$ is $\frac{1}{s}$ and find the ROC.
 	\item Show that 
 		\begin{align}
-			e^{-at}u(t) \system{L} \frac{1}{s+a}, a > 0
+			e^{-at}u(t) \system{L} \frac{1}{s+a}, \quad a > 0
 		\end{align}
 		and find the ROC.
-	\item When S is connected, transform the circuit 
+	\item Now consider the following resistive circuit transformed from 
+			Fig. \ref{fig:ckt}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=\columnwidth]{figs/lap-ckt.jpg}
+			\caption{}
+			\label{fig:lap-ckt}
+\end{figure}
+		where 
+		\begin{align}
+			u(t) \system{L} V_1(s)
+			\\
+			2u(t) \system{L} V_2(s)
+		\end{align}
+		Find the voltage across the capacitor $V_{C_0}(s)$.
+	\item Find $v_{C_0}(t)$.
 
 	\end{enumerate}
 
