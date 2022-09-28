@@ -33,9 +33,9 @@ svn co https://github.com/gadepall/EE3900-2022/trunk/filter
 3.  Pingala Series
 
 
-svn co https://github.com/gadepall/EE3900-2022/trunk/pingala
-
 https://github.com/gadepall/EE3900-2022/blob/main/pingala/main.pdf
 
-4.
+4.  Circuits and Transforms
+
+https://github.com/gadepall/EE3900-2022/blob/main/cktsig/main.pdf
 
