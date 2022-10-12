@@ -41,5 +41,5 @@ https://github.com/gadepall/EE3900-2022/blob/main/cktsig/main.pdf
 
 5.  Fourier Series
 
-https://github.com/gadepall/EE3900-2022/blob/main/cktsig/main.pdf
+https://github.com/gadepall/EE3900-2022/blob/main/charger/main.pdf
 
