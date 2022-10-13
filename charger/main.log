@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.9.16)  12 OCT 2022 08:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.9.16)  13 OCT 2022 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,32 +758,32 @@ LaTeX Info: Redefining \nameref on input line 74.
 \c@example=\count332
 \c@definition=\count333
 \c@rem=\count334
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 226.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 229.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
-6.
+9.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-26.
+29.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-26.
+29.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-26.
+29.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-26.
+29.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -793,57 +793,65 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 264.
+LaTeX Warning: Command \j invalid in math mode on input line 267.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 264.
+LaTeX Warning: Command \j invalid in math mode on input line 267.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 269.
+LaTeX Warning: Command \j invalid in math mode on input line 272.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 269.
+LaTeX Warning: Command \j invalid in math mode on input line 272.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 279.
+LaTeX Warning: Command \j invalid in math mode on input line 282.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 279.
+LaTeX Warning: Command \j invalid in math mode on input line 282.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 279.
+LaTeX Warning: Command \j invalid in math mode on input line 282.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 279.
+LaTeX Warning: Command \j invalid in math mode on input line 282.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+] [2
 
 ] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FA54EE41755E310682EB8E9C8C344FAE;247.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E36A45C84DE6002CCD5B66071F2C0429;451
+(rerunfilecheck)             After:  43EED739D6F151668068F9FE9749AB82;562.
  ) 
 Here is how much of TeX's memory you used:
- 15706 strings out of 478238
- 248023 string characters out of 5850456
- 724986 words of memory out of 5000000
- 33692 multiletter control sequences out of 15000+600000
+ 15738 strings out of 478238
+ 248288 string characters out of 5850456
+ 743986 words of memory out of 5000000
+ 33696 multiletter control sequences out of 15000+600000
  542944 words of font info for 184 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,9n,63p,231b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,63p,231b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txf
 onts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr
 /share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fo
-nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 59051 bytes).
+nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txf
+onts/txsyc.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
+are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on main.pdf (2 pages, 67684 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

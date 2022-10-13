@@ -107,6 +107,8 @@ columns=fullflexible
 \providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
 \providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
 \providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\providecommand{\rect}[1]{\text{rect}\ensuremath{\left(#1\right)}}
+\providecommand{\sinc}[1]{\text{sinc}\ensuremath{\left(#1\right)}}
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
@@ -119,7 +121,8 @@ columns=fullflexible
 \providecommand{\ztrans}{\overset{\mathcal{Z}}{ \rightleftharpoons}}
 
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
-\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+%\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+\providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
 	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
@@ -284,6 +287,57 @@ and obtain the formulae for $a_k$ and $b_k$.
 \eqref{eq:one-Z-real}
 using python.
 
+\end{enumerate}
+\section{Fourier Transform}
+
+ 
+
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+\item 
+	\begin{align}
+		\delta(t)&=0, \quad t\neq0
+\\
+		\int_{-\infty}^{\infty}\delta(t) \, dt&= 1
+	\end{align}
+ \item The Fourier Transform of $g(t)$ is
+ \begin{align}
+ G(f)=\int_{-\infty}^{\infty}g(t)e^{-j2\pi ft}\,dt
+ \end{align}
+ \item Show that 
+ \begin{align}
+	 g(t-t_0)&\system{F}G(f)e^{-j2\pi ft_0}\\
+ \end{align}
+ \item Show that 
+ \begin{align}
+	 G(t)&\system{F}g(-f)
+ \end{align}
+ \item $\delta(t)\system{F}?$
+ \item $e^{-j2\pi f_0t}\system{F}?$
+ \item $\cos(2\pi f_0t)\system{F}?$
+ \item Find the Fourier Transform of $x(t)$ and plot it.  Verify using python.
+ \item Show that 
+ \begin{align}
+	 \rect{t} \system{F} \sinc{t}
+ \end{align}
+ Verify using python.
+ \item 
+$	 \sinc{t}\system{F} ?$.  Verify using python.
+\end{enumerate}
+\section{Filter}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+\item Find $H(f)$ which transforms $x(t)$ to DC 5V.
+\item Find $h(t)$.
+\item Verify your result using  through convolution.
+\end{enumerate}
+\section{Filter Design}
+\begin{enumerate}[label=\thesection.\arabic*
+,ref=\thesection.\theenumi]
+\item Design a Butterworth filter for $H(f)$.
+\item Design a Chebyschev filter for $H(f)$.
+\item Design a circuit for your Butterworth filter.
+\item Design a circuit for your Chebyschev filter.
 \end{enumerate}
 
 
