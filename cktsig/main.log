@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.16)  19 OCT 2022 06:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.16)  19 OCT 2022 06:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,12 +791,12 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-<figs/ckt.jpg, id=19, 1748.5325pt x 642.4pt>
+<figs/ckt.jpg, id=24, 1748.5325pt x 642.4pt>
 File: figs/ckt.jpg Graphic file (type jpg)
 <use figs/ckt.jpg>
 Package pdftex.def Info: figs/ckt.jpg  used on input line 513.
 (pdftex.def)             Requested size: 252.0pt x 92.58199pt.
-<figs/lap-ckt.jpg, id=21, 2547.5175pt x 1128.215pt>
+<figs/lap-ckt.jpg, id=26, 2547.5175pt x 1128.215pt>
 File: figs/lap-ckt.jpg Graphic file (type jpg)
 <use figs/lap-ckt.jpg>
 Package pdftex.def Info: figs/lap-ckt.jpg  used on input line 529.
@@ -808,20 +808,14 @@ Package pdftex.def Info: figs/lap-ckt.jpg  used on input line 529.
 [2
 
 ] (./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B3E3CCC68C338A65E874C98DFABADF2B;365
-(rerunfilecheck)             After:  D3BF9C80BE444E36F35564B54C366050;501.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D3BF9C80BE444E36F35564B54C366050;501.
  ) 
 Here is how much of TeX's memory you used:
- 15748 strings out of 478238
- 248541 string characters out of 5850455
- 735986 words of memory out of 5000000
- 33710 multiletter control sequences out of 15000+600000
+ 15750 strings out of 478238
+ 248559 string characters out of 5850455
+ 736986 words of memory out of 5000000
+ 33711 multiletter control sequences out of 15000+600000
  541568 words of font info for 182 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,14n,63p,231b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -833,10 +827,10 @@ nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 282279 bytes).
+Output written on main.pdf (2 pages, 283015 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
